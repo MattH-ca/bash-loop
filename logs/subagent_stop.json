@@ -1,0 +1,72 @@
+[
+  {
+    "session_id": "4e57d0ae-3421-4456-b5e0-023fa14b1f3f",
+    "transcript_path": "/Users/matth/.claude/projects/-Users-matth-repos-bash-loop/4e57d0ae-3421-4456-b5e0-023fa14b1f3f.jsonl",
+    "cwd": "/Users/matth/repos/bash-loop",
+    "permission_mode": "default",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "ab3b0e9",
+    "agent_transcript_path": "/Users/matth/.claude/projects/-Users-matth-repos-bash-loop/4e57d0ae-3421-4456-b5e0-023fa14b1f3f/subagents/agent-ab3b0e9.jsonl"
+  },
+  {
+    "session_id": "4e57d0ae-3421-4456-b5e0-023fa14b1f3f",
+    "transcript_path": "/Users/matth/.claude/projects/-Users-matth-repos-bash-loop/4e57d0ae-3421-4456-b5e0-023fa14b1f3f.jsonl",
+    "cwd": "/Users/matth/repos/bash-loop",
+    "permission_mode": "default",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "a608cee",
+    "agent_transcript_path": "/Users/matth/.claude/projects/-Users-matth-repos-bash-loop/4e57d0ae-3421-4456-b5e0-023fa14b1f3f/subagents/agent-a608cee.jsonl"
+  },
+  {
+    "session_id": "4e57d0ae-3421-4456-b5e0-023fa14b1f3f",
+    "transcript_path": "/Users/matth/.claude/projects/-Users-matth-repos-bash-loop/4e57d0ae-3421-4456-b5e0-023fa14b1f3f.jsonl",
+    "cwd": "/Users/matth/repos/bash-loop",
+    "permission_mode": "default",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "a696a8d",
+    "agent_transcript_path": "/Users/matth/.claude/projects/-Users-matth-repos-bash-loop/4e57d0ae-3421-4456-b5e0-023fa14b1f3f/subagents/agent-a696a8d.jsonl"
+  },
+  {
+    "session_id": "4e57d0ae-3421-4456-b5e0-023fa14b1f3f",
+    "transcript_path": "/Users/matth/.claude/projects/-Users-matth-repos-bash-loop/4e57d0ae-3421-4456-b5e0-023fa14b1f3f.jsonl",
+    "cwd": "/Users/matth/repos/bash-loop",
+    "permission_mode": "default",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "a8bded8",
+    "agent_transcript_path": "/Users/matth/.claude/projects/-Users-matth-repos-bash-loop/4e57d0ae-3421-4456-b5e0-023fa14b1f3f/subagents/agent-a8bded8.jsonl"
+  },
+  {
+    "session_id": "4e57d0ae-3421-4456-b5e0-023fa14b1f3f",
+    "transcript_path": "/Users/matth/.claude/projects/-Users-matth-repos-bash-loop/4e57d0ae-3421-4456-b5e0-023fa14b1f3f.jsonl",
+    "cwd": "/Users/matth/repos/bash-loop",
+    "permission_mode": "default",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "a2bcff1",
+    "agent_transcript_path": "/Users/matth/.claude/projects/-Users-matth-repos-bash-loop/4e57d0ae-3421-4456-b5e0-023fa14b1f3f/subagents/agent-a2bcff1.jsonl"
+  },
+  {
+    "session_id": "4e57d0ae-3421-4456-b5e0-023fa14b1f3f",
+    "transcript_path": "/Users/matth/.claude/projects/-Users-matth-repos-bash-loop/4e57d0ae-3421-4456-b5e0-023fa14b1f3f.jsonl",
+    "cwd": "/Users/matth/repos/bash-loop",
+    "permission_mode": "default",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "aa598d1",
+    "agent_transcript_path": "/Users/matth/.claude/projects/-Users-matth-repos-bash-loop/4e57d0ae-3421-4456-b5e0-023fa14b1f3f/subagents/agent-aa598d1.jsonl"
+  },
+  {
+    "session_id": "4e57d0ae-3421-4456-b5e0-023fa14b1f3f",
+    "transcript_path": "/Users/matth/.claude/projects/-Users-matth-repos-bash-loop/4e57d0ae-3421-4456-b5e0-023fa14b1f3f.jsonl",
+    "cwd": "/Users/matth/repos/bash-loop",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "af9dfc3",
+    "agent_transcript_path": "/Users/matth/.claude/projects/-Users-matth-repos-bash-loop/4e57d0ae-3421-4456-b5e0-023fa14b1f3f/subagents/agent-af9dfc3.jsonl"
+  }
+]

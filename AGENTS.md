@@ -1,8 +1,8 @@
-# Ralph Agent Instructions
+# Loop Agent Instructions
 
 ## Overview
 
-Ralph is an autonomous AI agent loop that runs AI coding tools (Amp or Claude Code) repeatedly until all PRD items are complete. Each iteration is a fresh instance with clean context.
+Loop is an autonomous AI agent loop that runs AI coding tools (Amp or Claude Code) repeatedly until all PRD items are complete. Each iteration is a fresh instance with clean context.
 
 ## Commands
 
@@ -13,20 +13,20 @@ cd flowchart && npm run dev
 # Build the flowchart
 cd flowchart && npm run build
 
-# Run Ralph with Amp (default)
-./ralph.sh [max_iterations]
+# Run Loop with Amp (default)
+./loop.sh [max_iterations]
 
-# Run Ralph with Claude Code
-./ralph.sh --tool claude [max_iterations]
+# Run Loop with Claude Code
+./loop.sh --tool claude [max_iterations]
 ```
 
 ## Key Files
 
-- `ralph.sh` - The bash loop that spawns fresh AI instances (supports `--tool amp` or `--tool claude`)
+- `loop.sh` - The bash loop that spawns fresh AI instances (supports `--tool amp` or `--tool claude`)
 - `prompt.md` - Instructions given to each AMP instance
 -  `CLAUDE.md` - Instructions given to each Claude Code instance
 - `prd.json.example` - Example PRD format
-- `flowchart/` - Interactive React Flow diagram explaining how Ralph works
+- `flowchart/` - Interactive React Flow diagram explaining how Loop works
 
 ## Flowchart
 
