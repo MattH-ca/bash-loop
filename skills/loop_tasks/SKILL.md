@@ -46,7 +46,7 @@ Take a PRD (markdown file or text) and convert it to `prd.json` in your loop dir
 
 **Each story must be completable in ONE Loop iteration (one context window).**
 
-Loop spawns a fresh Amp instance per iteration with no memory of previous work. If a story is too big, the LLM runs out of context before finishing and produces broken code.
+Loop spawns a fresh instance per iteration with no memory of previous work. If a story is too big, the LLM runs out of context before finishing and produces broken code.
 
 ### Right-sized stories:
 - Add a database column and migration
@@ -111,7 +111,7 @@ For stories with testable logic, also include:
 "Verify in browser using dev-browser skill"
 ```
 
-Frontend stories are NOT complete until visually verified. Loop will use the dev-browser skill to navigate to the page, interact with the UI, and confirm changes work.
+Frontend stories are NOT complete until visually verified by the agent. Loop will use the dev-browser skill to navigate to the page, interact with the UI, and confirm changes work.
 
 ---
 

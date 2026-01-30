@@ -288,5 +288,45 @@
     "stop_hook_active": false,
     "agent_id": "abacd9d",
     "agent_transcript_path": "/Users/matth/.claude/projects/-Users-matth-repos-bash-loop/fb0c0def-c86f-430d-8c9c-45ce26d41507/subagents/agent-abacd9d.jsonl"
+  },
+  {
+    "session_id": "44058c09-9f4b-48ee-88f1-b4fc129c3055",
+    "transcript_path": "/Users/matth/.claude/projects/-Users-matth-repos-bash-loop/44058c09-9f4b-48ee-88f1-b4fc129c3055.jsonl",
+    "cwd": "/Users/matth/repos/bash-loop",
+    "permission_mode": "default",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "a599dfe",
+    "agent_transcript_path": "/Users/matth/.claude/projects/-Users-matth-repos-bash-loop/44058c09-9f4b-48ee-88f1-b4fc129c3055/subagents/agent-a599dfe.jsonl"
+  },
+  {
+    "session_id": "7151f014-4a53-44a2-904c-b6762f3cde29",
+    "transcript_path": "/Users/matth/.claude/projects/-Users-matth-repos-bash-loop/7151f014-4a53-44a2-904c-b6762f3cde29.jsonl",
+    "cwd": "/Users/matth/repos/bash-loop",
+    "permission_mode": "default",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "ad78b7a",
+    "agent_transcript_path": "/Users/matth/.claude/projects/-Users-matth-repos-bash-loop/7151f014-4a53-44a2-904c-b6762f3cde29/subagents/agent-ad78b7a.jsonl"
+  },
+  {
+    "session_id": "7151f014-4a53-44a2-904c-b6762f3cde29",
+    "transcript_path": "/Users/matth/.claude/projects/-Users-matth-repos-bash-loop/7151f014-4a53-44a2-904c-b6762f3cde29.jsonl",
+    "cwd": "/Users/matth/repos/bash-loop",
+    "permission_mode": "default",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "aab1c00",
+    "agent_transcript_path": "/Users/matth/.claude/projects/-Users-matth-repos-bash-loop/7151f014-4a53-44a2-904c-b6762f3cde29/subagents/agent-aab1c00.jsonl"
+  },
+  {
+    "session_id": "7151f014-4a53-44a2-904c-b6762f3cde29",
+    "transcript_path": "/Users/matth/.claude/projects/-Users-matth-repos-bash-loop/7151f014-4a53-44a2-904c-b6762f3cde29.jsonl",
+    "cwd": "/Users/matth/repos/bash-loop",
+    "permission_mode": "default",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "a7e2b00",
+    "agent_transcript_path": "/Users/matth/.claude/projects/-Users-matth-repos-bash-loop/7151f014-4a53-44a2-904c-b6762f3cde29/subagents/agent-a7e2b00.jsonl"
   }
 ]
