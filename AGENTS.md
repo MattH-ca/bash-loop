@@ -7,12 +7,6 @@ Loop is an autonomous AI agent loop that runs AI coding tools (Amp or Claude Cod
 ## Commands
 
 ```bash
-# Run the flowchart dev server
-cd flowchart && npm run dev
-
-# Build the flowchart
-cd flowchart && npm run build
-
 # Run Loop with Amp (default)
 ./loop.sh [max_iterations]
 
@@ -24,20 +18,8 @@ cd flowchart && npm run build
 
 - `loop.sh` - The bash loop that spawns fresh AI instances (supports `--tool amp` or `--tool claude`)
 - `prompt.md` - Instructions given to each AMP instance
--  `CLAUDE.md` - Instructions given to each Claude Code instance
+- `CLAUDE.md` - Instructions given to each Claude Code instance
 - `prd.json.example` - Example PRD format
-- `flowchart/` - Interactive React Flow diagram explaining how Loop works
-
-## Flowchart
-
-The `flowchart/` directory contains an interactive visualization built with React Flow. It's designed for presentations - click through to reveal each step with animations.
-
-To run locally:
-```bash
-cd flowchart
-npm install
-npm run dev
-```
 
 ## Patterns
 
