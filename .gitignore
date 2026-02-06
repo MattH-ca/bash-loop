@@ -12,3 +12,5 @@ progress.txt
 #Claude
 .claude/
 logs/
+
+tmp/
