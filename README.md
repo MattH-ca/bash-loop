@@ -1,14 +1,12 @@
 # Loop
 
-Loop is an autonomous AI agent loop that runs AI coding tools ([Amp](https://ampcode.com) or [Claude Code](https://docs.anthropic.com/en/docs/claude-code)) repeatedly until all PRD items are complete. Each iteration is a fresh instance with clean context. Memory persists via git history, `progress.txt`, and `prd.json`.
+Loop is an autonomous AI agent loop that runs [Claude Code](https://docs.anthropic.com/en/docs/claude-code) repeatedly until all PRD items are complete. Each iteration is a fresh instance with clean context. Memory persists via git history, `progress.txt`, and `prd.json`.
 
 Based on [Geoffrey Huntley's Ralph pattern](https://ghuntley.com/ralph/).
 
 ## Prerequisites
 
-- One of the following AI coding tools installed and authenticated:
-  - [Amp CLI](https://ampcode.com) (default)
-  - [Claude Code](https://docs.anthropic.com/en/docs/claude-code) (`npm install -g @anthropic-ai/claude-code`)
+- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) installed and authenticated (`npm install -g @anthropic-ai/claude-code`)
 - `jq` installed (`brew install jq` on macOS)
 - A git repository for your project
 
@@ -22,42 +20,19 @@ Copy the loop files into your project:
 # From your project root
 mkdir -p scripts/loop
 cp /path/to/loop/loop.sh scripts/loop/
-
-# Copy the prompt template for your AI tool of choice:
-cp /path/to/loop/prompt.md scripts/loop/prompt.md    # For Amp
-# OR
-cp /path/to/loop/CLAUDE.md scripts/loop/CLAUDE.md    # For Claude Code
+cp /path/to/loop/CLAUDE.md scripts/loop/CLAUDE.md
 
 chmod +x scripts/loop/loop.sh
 ```
 
 ### Option 2: Install skills globally
 
-Copy the skills to your Amp or Claude config for use across all projects:
+Copy the skills to your Claude config for use across all projects:
 
-For AMP
-```bash
-cp -r skills/prd ~/.config/amp/skills/
-cp -r skills/loop ~/.config/amp/skills/
-```
-
-For Claude Code
 ```bash
 cp -r skills/prd ~/.claude/skills/
 cp -r skills/loop ~/.claude/skills/
 ```
-
-### Configure Amp auto-handoff (recommended)
-
-Add to `~/.config/amp/settings.json`:
-
-```json
-{
-  "amp.experimental.autoHandoff": { "context": 90 }
-}
-```
-
-This enables automatic handoff when context fills up, allowing Loop to handle large stories that exceed a single context window.
 
 ## Workflow
 
@@ -84,14 +59,10 @@ This creates `prd.json` with user stories structured for autonomous execution.
 ### 3. Run Loop
 
 ```bash
-# Using Amp (default)
 ./scripts/loop/loop.sh [max_iterations]
-
-# Using Claude Code
-./scripts/loop/loop.sh --tool claude [max_iterations]
 ```
 
-Default is 10 iterations. Use `--tool amp` or `--tool claude` to select your AI coding tool.
+Default is 10 iterations.
 
 Loop will:
 1. Create a feature branch (from PRD `branchName`)
@@ -107,35 +78,19 @@ Loop will:
 
 | File | Purpose |
 |------|---------|
-| `loop.sh` | The bash loop that spawns fresh AI instances (supports `--tool amp` or `--tool claude`) |
-| `prompt.md` | Prompt template for Amp |
+| `loop.sh` | The bash loop that spawns fresh Claude Code instances |
 | `CLAUDE.md` | Prompt template for Claude Code |
 | `prd.json` | User stories with `passes` status (the task list) |
 | `prd.json.example` | Example PRD format for reference |
 | `progress.txt` | Append-only learnings for future iterations |
 | `skills/prd/` | Skill for generating PRDs |
 | `skills/loop/` | Skill for converting PRDs to JSON |
-| `flowchart/` | Interactive visualization of how Loop works |
-
-## Flowchart
-
-[![Loop Flowchart](loop-flowchart.png)](https://snarktank.github.io/bash-loop/)
-
-**[View Interactive Flowchart](https://snarktank.github.io/bash-loop/)** - Click through to see each step with animations.
-
-The `flowchart/` directory contains the source code. To run locally:
-
-```bash
-cd flowchart
-npm install
-npm run dev
-```
 
 ## Critical Concepts
 
 ### Each Iteration = Fresh Context
 
-Each iteration spawns a **new AI instance** (Amp or Claude Code) with clean context. The only memory between iterations is:
+Each iteration spawns a **new Claude Code instance** with clean context. The only memory between iterations is:
 - Git history (commits from previous iterations)
 - `progress.txt` (learnings and context)
 - `prd.json` (which stories are done)
@@ -157,7 +112,7 @@ Too big (split these):
 
 ### AGENTS.md Updates Are Critical
 
-After each iteration, Loop updates the relevant `AGENTS.md` files with learnings. This is key because AI coding tools automatically read these files, so future iterations (and future human developers) benefit from discovered patterns, gotchas, and conventions.
+After each iteration, Loop updates the relevant `AGENTS.md` files with learnings. This is key because Claude Code automatically reads these files, so future iterations (and future human developers) benefit from discovered patterns, gotchas, and conventions.
 
 Examples of what to add to AGENTS.md:
 - Patterns discovered ("this codebase uses X for Y")
@@ -196,7 +151,7 @@ git log --oneline -10
 
 ## Customizing the Prompt
 
-After copying `prompt.md` (for Amp) or `CLAUDE.md` (for Claude Code) to your project, customize it for your project:
+After copying `CLAUDE.md` to your project, customize it:
 - Add project-specific quality check commands
 - Include codebase conventions
 - Add common gotchas for your stack
@@ -208,5 +163,4 @@ Loop automatically archives previous runs when you start a new feature (differen
 ## References
 
 - [Geoffrey Huntley's Ralph article](https://ghuntley.com/ralph/) (the pattern this project is based on)
-- [Amp documentation](https://ampcode.com/manual)
 - [Claude Code documentation](https://docs.anthropic.com/en/docs/claude-code)
