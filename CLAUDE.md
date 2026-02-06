@@ -10,7 +10,7 @@ You are an autonomous coding agent working on a software project.
 4. Pick the **highest priority** user story where `passes: false`
 5. Implement that single user story
 6. Run quality checks (e.g., typecheck, lint, test - use whatever your project requires)
-7. Update AGENTS.md if you discover reusable patterns (see below)
+7. Update CLAUDE.md if you discover reusable patterns (see below)
 8. If checks pass, commit ALL changes with message: `feat: [Story ID] - [Story Title]`
 9. Update the PRD to set `passes: true` for the completed story
 10. Append your progress to `progress.txt`
@@ -44,12 +44,12 @@ If you discover a **reusable pattern** that future iterations should know, add i
 
 Only add patterns that are **general and reusable**, not story-specific details.
 
-## Update AGENTS.md
+## Update CLAUDE.md
 
-Before committing, check if any edited files have learnings worth preserving in AGENTS.md:
+Before committing, check if any edited files have learnings worth preserving in CLAUDE.md:
 
 1. **Identify patterns worth sharing** - Look at what you learned while implementing
-2. **Check the Patterns section** - See what's already documented in AGENTS.md
+2. **Check the Patterns section** - See what's already documented in CLAUDE.md
 3. **Add valuable learnings** - If you discovered something future developers/agents should know:
    - API patterns or conventions specific to that module
    - Gotchas or non-obvious requirements
@@ -68,7 +68,7 @@ Before committing, check if any edited files have learnings worth preserving in 
 - Temporary debugging notes
 - Information already in progress.txt
 
-Only update AGENTS.md if you have **genuinely reusable knowledge** that would help future iterations.
+Only update CLAUDE.md if you have **genuinely reusable knowledge** that would help future iterations.
 
 ## Quality Requirements
 
