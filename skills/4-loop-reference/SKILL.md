@@ -1,5 +1,5 @@
 ---
-name: loop-study
+name: loop-reference
 description: "Research modern solutions and best practices for technical decisions. Use when you need to find current documentation, compare libraries, or discover best practices. Uses web search and Context7 MCP for up-to-date information. Triggers on: research this, find best practices for, what's the current approach to, look up documentation for, study how to, compare options for."
 ---
 
